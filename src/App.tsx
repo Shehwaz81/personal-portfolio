@@ -1,35 +1,21 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { defineConfig } from 'vite'
+import tailwindcss from '@tailwindcss/vite' 
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const Navbar = () => {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <nav className="fixed top-3 left-1/2 transform -translate-x-1/2 z-50">
+      <div className="bg-black/80 w-96 backdrop-blur-md border-3 border-green-700 rounded-3xl h-12 flex justify-center items-center text-white transition duration-300 hover:scale-102">
+        <div className="flex space-x-8">
+          <a href="#home" className="text-white/70 hover:text-white transition-colors text-sm">Home</a>
+          <a href="#about" className="text-white/70 hover:text-white transition-colors text-sm">About</a>
+          <a href="#projects" className="text-white/70 hover:text-white transition-colors text-sm">Projects</a>
+          <a href="#contact" className="text-white/70 hover:text-white transition-colors text-sm">Contact</a>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </nav>
   )
 }
 
-export default App
+export default Navbar
