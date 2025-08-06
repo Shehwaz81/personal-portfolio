@@ -1,12 +1,12 @@
-import Navbar from './components/Navbar'
-import { ParticlesBackground } from './components/Particles'
+import Navbar from './components/layout/Navbar'
 import './index.css'
+import { Hero } from './sections/Hero'
 
 export const App = () => {
   return (
     <>
-      <ParticlesBackground/>
       <Navbar/>
+      <Hero/>
     </>
   )
 }

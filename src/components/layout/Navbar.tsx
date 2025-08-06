@@ -1,0 +1,24 @@
+import '/src/index.css'
+import CubeIcon from '../../assets/cube-10018.svg'
+
+export const Navbar = () => {
+  return (
+    <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50">      
+      <div className="island z-10 bg-black/15 border-1 border-cyan-300 backdrop-blur-md rounded-3xl px-6 py-2 flex items-center text-white transition-all duration-500 hover:bg-black/95 hover:drop-shadow-[0_0_0.8rem_cyan] hover:scale-105 group">
+
+
+        <img src={CubeIcon} alt="Cube Icon" className="w-6 h-6 sm:w-7 sm:h-7 transition-transform duration-500 group-hover:rotate-360 group-hover:scale-105" />
+        
+        <div className="w-3 sm:w-5 border-l border-white/100 h-6 ml-4 mr-1" />
+        
+        <div className="flex space-x-6">
+          <a href="#about" className="text-white/70 hover:text-cyan-400 duration-300 hover:scale-102">Vision</a>
+          <a href="#projects" className="text-white/70 hover:text-cyan-400 duration-300 hover:scale-102">Projects</a>
+          <a href="#contact" className="text-white/70 hover:text-cyan-400  duration-300 hover:scale-102 mr-2">Experiences</a>
+        </div>
+      </div>
+    </nav>
+  )
+}
+
+export default Navbar
