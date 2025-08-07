@@ -18,7 +18,7 @@ export const Hero = ({
 } : HeroProps) => {
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden w-full">
-
+      <ParticlesBackground/>
       <div className="flex flex-col lg:flex-row items-center lg:gap-8 z-10 px-6 max-w-8xl mx-auto ">
         
         <div className="flex-shrink-0 !space-y-0">
@@ -27,7 +27,7 @@ export const Hero = ({
 
         <div className="h-100 mr-1 ml-1 hidden lg:block "/>
         
-        <div className="flex flex-col space-y-7 text-center"> {/* if small device size, make text centered, else make it to the left of div*/}
+        <div className="flex flex-col space-y-7 text-center">
           <h1 className="text-5xl lg:text-7xl font-bold bg-gradient-to-r from-white/70 to-cyan-300 bg-clip-text text-transparent">
             Shehwaz Saini
           </h1>
@@ -35,7 +35,7 @@ export const Hero = ({
             Bulding <span className="text-cyan-300 font-medium">AI-driven solutions</span> for the world to use
           </p>
 
-          <div className="flex flex-wrap justify-center lg:justify-start gap-2">
+          <div className="flex flex-wrap justify-center gap-2">
             <Badge color="cyan" className="" content={achievement}/>
             <Badge color="cyan" className="" content={serious}/>  
             <Badge color="cyan" className="" content={hobby}/>
@@ -54,7 +54,7 @@ export const Hero = ({
           {/* Status */}
           <div className="flex items-center justify-center gap-2 text-sm text-slate-400">
             <div className="w-2 h-2 bg-cyan-400 rounded-full animate-pulse" />
-            <span>Building SkillForge • Open to opportunities</span>
+            <span>Building SkillForge • Changing how we level up</span>
           </div>
         </div>
 
