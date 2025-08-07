@@ -4,7 +4,7 @@ import CubeIcon from '../../assets/cube-10018.svg'
 export const Navbar = () => {
   return (
     <nav className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50">      
-      <div className="island z-10 bg-black/15 border-1 border-cyan-300 backdrop-blur-md rounded-3xl px-6 py-2 flex items-center text-white transition-all duration-500 hover:bg-black/95 hover:drop-shadow-[0_0_0.8rem_cyan] scale-110 hover:scale-115 group">
+      <div className="island z-10 bg-black/15 backdrop-blur-md rounded-3xl px-6 py-2 flex items-center text-white transition-all duration-500 hover:bg-black/95 hover:drop-shadow-[0_0_0.8rem_cyan] scale-110 hover:scale-115 group">
 
 
         <img src={CubeIcon} alt="Cube Icon" className="w-6 h-6 sm:w-7 sm:h-7 transition-transform duration-500 group-hover:rotate-360 group-hover:scale-105" />
