@@ -13,10 +13,12 @@ export const Story = () => {
                 <div className="relative">
                 <div className="absolute w-1 h-full bg-gradient-to-b from-cyan-400 to-blue-500 rounded-full"></div>
                 <p className="text-slate-300 text-sm sm:text-base lg:text-lg leading-8 pl-6">
-                    Hi! My name Is <span className="text-cyan-300 font-medium">Shehwaz Singh Saini</span>. I was born in India and moved to Brampton, Ontario when I was two years old. 
+                    Hi! My name Is <span className="text-cyan-300 font-medium">Shehwaz Singh Saini</span>. 
+                    I was born in India and moved to Brampton, Ontario when I was two years old. 
                     My family left everything behind in pursuit of a better life and education. Through sheer hard work and discipline
-                    my parents were able to break through the poverty line, moving to a newly built house in Windsor, ON. This experience of seeing them
-                    struggle as a child, but still keeping me happy taught me a lot about how valuable hard work is, and how <span className="text-cyan-300 font-medium">hard work always beats talent, always</span>.
+                    my parents were able to break through the poverty line, moving to a newly built house in Windsor, ON. Seeing them struggle as a child
+                    while still trying to keep me happy taught me a lot about how valuable hard work is, and how
+                    <span className="text-cyan-300 font-medium"> hard work always beats talent, always</span>.
                 </p>
                 </div>
 
