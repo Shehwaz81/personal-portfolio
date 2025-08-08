@@ -1,9 +1,23 @@
 import '/src/index.css'
 import CubeIcon from '../../assets/cube-10018.svg'
 
+interface NavbarProps {
+  About: string;
+  Projects: string;
+  Exp: string;
+}
 
+export const Navbar = ({
+  About="About",
+  Projects="Projects",
+  Exp="Experiences"
+}: NavbarProps) => {
 
-export const Navbar = () => {
+  const scrollToSection = (secitonId: string) => {
+    document.getElementById(secitonId)?.scrollIntoView({
+      behavior: 'smooth'
+    });
+  };
   return (
     <nav className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50">      
       <div className="island z-10 bg-black/15 backdrop-blur-md rounded-3xl px-6 py-2 flex items-center text-white transition-all duration-500 hover:bg-black/95 hover:drop-shadow-[0_0_0.8rem_cyan] scale-110 hover:scale-115 group">
@@ -14,9 +28,9 @@ export const Navbar = () => {
         <div className=" border-l border-white/100 h-6 ml-3 mr-4"/>
         
         <div className="flex space-x-6">
-          <a href="#about" className="text-white/70 hover:text-cyan-400 duration-300 hover:scale-102">Vision</a>
-          <a href="#projects" className="text-white/70 hover:text-cyan-400 duration-300 hover:scale-102">Projects</a>
-          <a href="#contact" className="text-white/70 hover:text-cyan-400  duration-300 hover:scale-102 mr-2">Experiences</a>
+          <button onClick={() => scrollToSection("about")} className="text-white/70 hover:text-cyan-400 duration-300 hover:scale-102">{About}</button>
+          <button onClick={() => scrollToSection("about")} className="text-white/70 hover:text-cyan-400 duration-300 hover:scale-102">{Projects}</button>
+          <button onClick={() => scrollToSection("about")} className="text-white/70 hover:text-cyan-400  duration-300 hover:scale-102 mr-2">{Exp}</button>
         </div>
       </div>
     </nav>

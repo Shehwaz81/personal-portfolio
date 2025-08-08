@@ -3,7 +3,7 @@ import React from 'react'
 export const Story = () => {
     return (
     <>
-        <div className="transition-all relative mx-auto mt-25 max-w-4xl p-6 sm:p-8 lg:p-10 bg-gradient-to-br from-slate-900/50 to-slate-900/30 rounded-xl backdrop-blur-sm space-y-6 sm:space-y-8 ring-1 ring-cyan-500/30 ring-opacity-20 hover:ring-cyan-500/60 hover:ring-2 hover:scale-102 hover:shadow-[0_0_5rem_rgba(0,255,255,0.3)] duration-400 ease-in-out">
+        <div id="about" className="transition-all relative mx-auto mt-25 max-w-4xl p-6 sm:p-8 lg:p-10 bg-gradient-to-br from-slate-900/50 to-slate-900/30 rounded-xl backdrop-blur-sm space-y-6 sm:space-y-8 ring-1 ring-cyan-500/30 ring-opacity-20 hover:ring-cyan-500/60 hover:ring-2 hover:scale-102 hover:shadow-[0_0_5rem_rgba(0,255,255,0.3)] duration-400 ease-in-out">
             
             <h2 className="text-3xl font-bold bg-gradient-to-r from-white to-cyan-300 bg-clip-text text-transparent text-center mb-10">
                 My Journey
