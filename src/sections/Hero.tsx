@@ -11,7 +11,7 @@ interface HeroProps {
 
 
 export const Hero = ({
-  education="CS50x Graduate",
+  education="CS50x",
   achievement="WRO National 2nd",
   serious="Competitive Programmer",
   hobby="Speed Cuber"
@@ -36,9 +36,10 @@ export const Hero = ({
           </p>
 
           <div className="flex flex-wrap justify-center gap-2">
-            <Badge color="cyan" className="" content={achievement}/>
-            <Badge color="cyan" className="" content={serious}/>  
-            <Badge color="cyan" className="" content={hobby}/>
+            <Badge color="cyan" className="hover:scale-102 hover:border-cyan-500" content={achievement}/>
+            <Badge color="cyan" className="hover:scale-102 hover:border-cyan-500" content={education}/>
+            <Badge color="cyan" className="hover:scale-102 hover:border-cyan-500" content={serious}/>  
+            <Badge color="cyan" className="hover:scale-102 hover:border-cyan-500" content={hobby}/>
           </div>
 
           {/* CTA buttons */}

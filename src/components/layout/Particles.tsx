@@ -24,6 +24,7 @@ export const ParticlesBackground = () => {
           move: {
             enable: true,
             speed: 0.4,
+            direction: "right"
           },
         },
         interactivity: {
