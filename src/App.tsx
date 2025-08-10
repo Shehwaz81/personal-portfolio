@@ -4,15 +4,18 @@ import { ParticlesBackground } from './components/layout/Particles'
 import './index.css'
 import About from './sections/About'
 import { Hero } from './sections/Hero'
+import Projects from './sections/Projects'
 
 export const App = () => {
   return (
     <>
-      <ParticlesBackground/>
       <Navbar/>
       <Hero/>
       <Divider/>
       <About/>
+      <Divider/>
+      <Projects/>
+      <Divider/>
     </>
   )
 }

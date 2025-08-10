@@ -9,7 +9,6 @@ interface HeroProps {
     hobby?: string;
   }
 
-
 export const Hero = ({
   education="CS50x",
   achievement="WRO National 2nd",
@@ -17,7 +16,7 @@ export const Hero = ({
   hobby="Speed Cuber"
 } : HeroProps) => {
   return (
-    <div className="relative min-h-screen flex items-center justify-center overflow-hidden w-full">
+    <div id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden w-full">
       <ParticlesBackground/>
       <div className="flex flex-col lg:flex-row items-center lg:gap-8 z-10 px-6 max-w-8xl mx-auto ">
         
@@ -32,20 +31,19 @@ export const Hero = ({
             Shehwaz Saini
           </h1>
           <p className="text-xl lg:text-2xl text-slate-200 max-w-2xl">
-            Bulding <span className="text-cyan-300 font-medium">AI-driven solutions</span> for the world to use
+            Building <span className="text-cyan-300 font-medium">AI-driven solutions</span> for the world to use
           </p>
 
           <div className="flex flex-wrap justify-center gap-2">
-            <Badge color="cyan" className="hover:scale-102 hover:border-cyan-500" content={achievement}/>
-            <Badge color="cyan" className="hover:scale-102 hover:border-cyan-500" content={education}/>
-            <Badge color="cyan" className="hover:scale-102 hover:border-cyan-500" content={serious}/>  
-            <Badge color="cyan" className="hover:scale-102 hover:border-cyan-500" content={hobby}/>
+            <Badge  className="hover:scale-102 hover:border-cyan-500" content={achievement}/>
+            <Badge  className="hover:scale-102 hover:border-cyan-500" content={education}/>
+            <Badge  className="hover:scale-102 hover:border-cyan-500" content={serious}/>  
+            <Badge  className="hover:scale-102 hover:border-cyan-500" content={hobby}/>
           </div>
 
-          {/* CTA buttons */}
           <div className="flex flex-col sm:flex-row gap-3 justify-center ">
-            <button className="relative px-8 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-semibold rounded-full hover:from-blue-500 hover:to-cyan-500 hover:scale-105 transition-transform ease-in-out duration-300">
-              View Projects
+            <button className="relative px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-semibold rounded-full hover:from-blue-500 hover:to-cyan-500 hover:scale-105 transition-transform ease-in-out duration-300">
+              See What I’ve Built
             </button>
             <button className="px-8 py-3 border-2 border-cyan-400 text-cyan-400 font-semibold rounded-full hover:bg-cyan-400 hover:text-slate-900 transition-colors duration-300">
               Connect
