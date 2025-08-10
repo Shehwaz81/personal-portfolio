@@ -4,7 +4,7 @@ import React from 'react'
 const Projects = () => {
     return (
     <>
-        <h1 className="text-4xl font-bold bg-gradient-to-r from-white to-cyan-300 bg-clip-text text-transparent text-center mb-10 mt-15 p-2">
+        <h1 id="projects" className="text-4xl font-bold bg-gradient-to-r from-white to-cyan-300 bg-clip-text text-transparent text-center mb-10 mt-15 p-2">
             Projects
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto justify-items-center">

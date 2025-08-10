@@ -15,9 +15,18 @@ export const Hero = ({
   serious="Competitive Programmer",
   hobby="Speed Cuber"
 } : HeroProps) => {
+  const scrollToSection = (sectionId: string, offset = 0) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const element_pos = element.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({
+        top: element_pos - offset,
+        behavior: 'smooth'
+      });
+    }
+  };
   return (
-    <div id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden w-full">
-      <ParticlesBackground/>
+    <div className="relative min-h-screen flex items-center justify-center overflow-hidden w-full">
       <div className="flex flex-col lg:flex-row items-center lg:gap-8 z-10 px-6 max-w-8xl mx-auto ">
         
         <div className="flex-shrink-0 !space-y-0">
@@ -42,8 +51,8 @@ export const Hero = ({
           </div>
 
           <div className="flex flex-col sm:flex-row gap-3 justify-center ">
-            <button className="relative px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-semibold rounded-full hover:from-blue-500 hover:to-cyan-500 hover:scale-105 transition-transform ease-in-out duration-300">
-              See What I’ve Built
+            <button onClick={() => scrollToSection("projects", 200)}className="relative px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-semibold rounded-full hover:from-blue-500 hover:to-cyan-500 hover:scale-105 transition-transform ease-in-out duration-300">
+              See What I`ve Built
             </button>
             <button className="px-8 py-3 border-2 border-cyan-400 text-cyan-400 font-semibold rounded-full hover:bg-cyan-400 hover:text-slate-900 transition-colors duration-300">
               Connect
