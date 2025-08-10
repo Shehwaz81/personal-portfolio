@@ -2,9 +2,9 @@ import '/src/index.css'
 import CubeIcon from '../../assets/cube-10018.svg'
 
 interface NavbarProps {
-  About: string;
-  Projects: string;
-  Exp: string;
+  About?: string;
+  Projects?: string;
+  Exp?: string;
 }
 
 export const Navbar = ({
@@ -35,7 +35,7 @@ export const Navbar = ({
         <div className="flex space-x-6">
           <button onClick={() => scrollToSection("about", 90)} className="text-white/70 hover:text-cyan-400 duration-300 hover:scale-102">{About}</button>
           <button onClick={() => scrollToSection("projects", 200)} className="text-white/70 hover:text-cyan-400 duration-300 hover:scale-102">{Projects}</button>
-          <button onClick={() => scrollToSection("about", 90)} className="text-white/70 hover:text-cyan-400  duration-300 hover:scale-102 mr-2">{Exp}</button>
+          <button onClick={() => scrollToSection("exp", 30)} className="text-white/70 hover:text-cyan-400  duration-300 hover:scale-102 mr-2">{Exp}</button>
         </div>
       </div>
     </nav>

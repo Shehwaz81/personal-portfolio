@@ -24,7 +24,7 @@ export const About = () => {
                             I was born in India and moved to Brampton, Ontario when I was two years old.
                             My family left everything behind in pursuit of a better life and education.
                             Through sheer hard work and discipline, my parents broke through the poverty line,
-                            moving to a newly built house in Windsor, ON. Seeing them struggle while still keeping me happy taught me that
+                            moving to a newly built house in Windsor, ON. Seeing them struggle almost everyday while still keeping me happy taught me one valuable lesson;
                             <span className="text-cyan-300 font-medium"> hard work always beats talent</span>.
                         </p>
                     </div>
@@ -43,11 +43,17 @@ export const About = () => {
                         <p className="text-slate-200 text-sm sm:text-base lg:text-lg leading-relaxed">
                             This persistence led me to <span className="text-cyan-300 font-medium">Harvard's CS50x course</span>,
                             spending countless hours debugging code and wrestling with algorithms.
-                            It opened doors I never imagined—like competing nationally in <span className="text-cyan-300 font-medium">WRO robotics</span> and placing <span className="text-cyan-300 font-medium">2nd in Canada</span>.
+                            It opened doors I never imagined, like the opportunity to compete nationally in <span className="text-cyan-300 font-medium">WRO robotics</span> where me and my friend placed <span className="text-cyan-300 font-medium">2nd in Canada</span>, 
+                            and the opporuntiy to intern at a small <span className="text-cyan-300 font-medium">Startup</span>, communicating and building along side professional devs.
+                        </p>
+                    </div>
+                    <div className="relative pl-6">
+                        <p className="text-slate-200 text-sm sm:text-base lg:text-lg leading-relaxed">
                             Now, I’m advancing in competitive programming and building projects, proving again that effort beats raw talent every time.
                         </p>
                     </div>
                 </div>
+
 
                 <div className="flex justify-center pt-6">
                     <div className="flex items-center gap-2 text-xs sm:text-sm text-slate-400">

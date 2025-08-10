@@ -8,6 +8,7 @@ interface CardProps {
     demo?: string;
     techStack?: string[];
     className?: string;
+    display?: string;
 }
 
 const Card = ({
@@ -17,6 +18,7 @@ const Card = ({
     github = "https://github.com/Shehwaz81/personal-portfolio/",
     demo = "https://devpost.com/software/919909/joins/efTxB2B2XmK004od6BrN-w",
     techStack = ["React", "TypeScript", "Flask", "TensorFlow", "OpenCV"],
+    display,
     className = ""
 }: CardProps) => {
     const [ishovered, setIshovered] = useState(false)
@@ -29,16 +31,18 @@ const Card = ({
         </span>
     ));
 
+    const style = {display: display}
+
     return (
-        <div className={`flex flex-col justify-start max-w-full h-auto bg-gradient-to-br from-slate-900/60 to-slate-800/40 transform hover:-translate-y-1 rounded-2xl backdrop-blur-sm overflow-hidden ring-1 ring-slate-600/40 hover:ring-cyan-500/50 hover:shadow-[0_8px_32px_rgba(6,182,212,0.15)] transition-all duration-300 ${className}`}>
+        <div style={style} className={"flex flex-col justify-start max-w-full h-auto bg-gradient-to-br from-slate-900/60 to-slate-800/40 transform hover:-translate-y-1 rounded-2xl backdrop-blur-sm overflow-hidden ring-1 ring-slate-600/40 hover:drop-shadow-[0_0_0.3rem_cyan] hover:ring-cyan-500/50 hover:shadow-[0_8px_32px_rgba(6,182,212,0.15)] transition-all duration-300 ${className}"}>
             
             <div className="relative overflow-hidden bg-slate-800/30">
                 <img 
                     src={img} 
                     alt={`${title} preview`}
-                    className="w-full h-64 object-cover hover:scale-110 transition-transform duration-300"
+                    className="w-full h-64 object-cover hover:scale-110 transition-transform transform-all duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 via-transparent to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute bg-gradient-to-t from-slate-900/40 via-transparent to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300" />
             </div>
 
             <div className="p-7">
