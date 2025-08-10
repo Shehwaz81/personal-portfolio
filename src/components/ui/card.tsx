@@ -13,8 +13,8 @@ interface CardProps {
 const Card = ({
     title = "Signify",
     description = "An ASL sign language translator with an emotion recognition model built in for uniqueness",
-    img = "/api/placeholder/400/300",
-    github = "https://github.com/Shehwaz81/personal-portfolio/blob/main/src/assets/Signify.jpeg",
+    img = "/src/assets/Signify.jpeg",
+    github = "https://github.com/Shehwaz81/personal-portfolio/",
     demo = "https://devpost.com/software/919909/joins/efTxB2B2XmK004od6BrN-w",
     techStack = ["React", "TypeScript", "Flask", "TensorFlow", "OpenCV"],
     className = ""
@@ -36,7 +36,7 @@ const Card = ({
                 <img 
                     src={img} 
                     alt={`${title} preview`}
-                    className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+                    className="w-full h-64 object-cover hover:scale-110 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 via-transparent to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300" />
             </div>
