@@ -42,7 +42,7 @@ export const Hero = ({
             Building <span className="text-cyan-300 font-medium">AI-driven solutions</span> for the world to use
           </p>
 
-          <div className="flex flex-wrap justify-center gap-2">
+          <div className="flex flex-wrap justify-center gap-1 sm:gap-2 w-full sm:w-auto">
             <Badge  className="hover:scale-102 hover:border-cyan-500" content={achievement}/>
             <Badge  className="hover:scale-102 hover:border-cyan-500" content={education}/>
             <Badge  className="hover:scale-102 hover:border-cyan-500" content={serious}/>  
@@ -50,10 +50,10 @@ export const Hero = ({
           </div>
 
           <div className="flex flex-col sm:flex-row gap-3 justify-center ">
-            <button onClick={() => scrollToSection("projects", 200)}className="relative px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-semibold rounded-full hover:from-blue-500 hover:to-cyan-500 hover:scale-105 transition-transform ease-in-out duration-300">
+            <button onClick={() => scrollToSection("projects", 200)} className="relative w-full sm:w-auto text-sm sm:text-base px-3 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-semibold rounded-full hover:from-blue-500 hover:to-cyan-500 hover:scale-105 transition-transform ease-in-out duration-300">
               See What I've Built
             </button>
-            <button onClick={() => window.open("https://www.linkedin.com/in/shehwaz-saini-566494318/")} className="px-8 py-3 border-2 border-cyan-400 text-cyan-400 font-semibold rounded-full hover:bg-cyan-400 hover:text-slate-900 transition-colors duration-300">
+            <button onClick={() => window.open("https://www.linkedin.com/in/shehwaz-saini-566494318/")} className="w-full sm:w-auto text-sm sm:text-base px-4 sm:px-8 py-2 sm:py-3 border-2 border-cyan-400 text-cyan-400 font-semibold rounded-full hover:bg-cyan-400 hover:text-slate-900 transition-colors duration-300">
               Colaberate
             </button>
           </div>

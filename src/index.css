@@ -49,6 +49,18 @@ body {
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 }
+.nav-link {
+  @apply text-white/80 hover:text-cyan-400 transition-colors;
+}
+.more-btn {
+  @apply flex items-center space-x-2 bg-cyan-500/20 px-3 py-1 rounded-full text-cyan-400 hover:bg-cyan-500/30 transition;
+}
+.social-btn {
+  @apply w-8 h-8 flex items-center justify-center bg-white/10 rounded-full hover:bg-white/20 transition;
+}
+.mobile-link {
+  @apply block w-full text-left text-white/80 hover:text-cyan-400 py-2 transition;
+}
 
 :root {
   --radius: 0.625rem;

@@ -11,7 +11,8 @@ const Projects = () => {
             img: "/assets/Skillforge proto.png",
             techStack: ["React", "Node.js", "PostgreSQL", "OpenAI API", "TypeScript"],
             github: "https://github.com/username/skillforge",
-            demo: "https://skillforge-demo.com"
+            demo: "https://skillforge-demo.com",
+            hasDemo: false
         },
         {
             title: 'CS50 Finance',
@@ -19,15 +20,17 @@ const Projects = () => {
             img: "/assets/cs50finance.png",
             techStack: ["HTML", "CSS", "JavaScript", "Flask", "Jinja", "Python"],
             github: "https://github.com/username/cs50-finance",
-            demo: "https://cs50-finance-demo.com"
+            demo: "https://cs50.harvard.edu/x/psets/9/finance/",
+            hasDemo: true
         },
         {
             title: "Signify",
             description: "An ASL sign language translator with an emotion recognition model built in for uniqueness",
             img: "/assets/Signify.jpeg",
-            github: "https://github.com/Shehwaz81/personal-portfolio/",
+            github: "https://github.com/Shehwaz81/Signify",
             demo: "https://devpost.com/software/919909/joins/efTxB2B2XmK004od6BrN-w",
             techStack: ["React", "TypeScript", "Flask", "TensorFlow", "OpenCV"],
+            hasDemo: true
         },
         {
             title: "WRO Robot",
@@ -36,9 +39,10 @@ const Projects = () => {
             github: "https://github.com/Shehwaz81/personal-portfolio/",
             demo: "/src/assets/WR",
             techStack: ["MicroPython", "OOP", "ESP32",],
+            hasDemo: true
         }
     ]
-    // if user clicked see more, make array all objects, else make the array the first 4 projects
+    // if user clicked see more, make array all objects, else make the array the first 2 projects
     const visibleProjects = seeMore ? allProjects : allProjects.slice(0, 2)
 
     const projectList = visibleProjects.map((project, index) => (
@@ -56,6 +60,7 @@ const Projects = () => {
                 img={project.img}
                 techStack={project.techStack}
                 github={project.github}
+                hasDemo={project.hasDemo}
                 demo={project.demo}
             />
         </div>
