@@ -14,7 +14,7 @@ interface CardProps {
 const Card = ({
     title = "Signify",
     description = "An ASL sign language translator with an emotion recognition model built in for uniqueness",
-    img = "/src/assets/Signify.jpeg",
+    img = "/public/assets/Signify.jpeg",
     github = "https://github.com/Shehwaz81/personal-portfolio/",
     demo = "https://devpost.com/software/919909/joins/efTxB2B2XmK004od6BrN-w",
     techStack = ["React", "TypeScript", "Flask", "TensorFlow", "OpenCV"],

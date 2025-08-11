@@ -52,10 +52,10 @@ export const Hero = ({
 
           <div className="flex flex-col sm:flex-row gap-3 justify-center ">
             <button onClick={() => scrollToSection("projects", 200)}className="relative px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-semibold rounded-full hover:from-blue-500 hover:to-cyan-500 hover:scale-105 transition-transform ease-in-out duration-300">
-              See What I`ve Built
+              See What I've Built
             </button>
-            <button className="px-8 py-3 border-2 border-cyan-400 text-cyan-400 font-semibold rounded-full hover:bg-cyan-400 hover:text-slate-900 transition-colors duration-300">
-              Connect
+            <button onClick={() => window.open("https://www.linkedin.com/in/shehwaz-saini-566494318/")} className="px-8 py-3 border-2 border-cyan-400 text-cyan-400 font-semibold rounded-full hover:bg-cyan-400 hover:text-slate-900 transition-colors duration-300">
+              Colaberate
             </button>
           </div>
 
