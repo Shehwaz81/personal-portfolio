@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import CubeIcon from '../../assets/cube-10018.svg'
 import { Download, Mail, Github, Linkedin } from 'lucide-react';
 

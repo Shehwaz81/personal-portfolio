@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+
 
 interface CardProps {
     title?: string;
@@ -19,9 +19,7 @@ const Card = ({
     demo = "https://devpost.com/software/919909/joins/efTxB2B2XmK004od6BrN-w",
     techStack = ["React", "TypeScript", "Flask", "TensorFlow", "OpenCV"],
     display,
-    className = ""
 }: CardProps) => {
-    const [ishovered, setIshovered] = useState(false)
     const techElements = techStack.map((tech, index) => (
         <span 
             key={index} 

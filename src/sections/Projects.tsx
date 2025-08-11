@@ -1,5 +1,5 @@
 import Card from '@/components/ui/card'
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 const Projects = () => {
     const [seeMore, setSeeMore] = useState(false)

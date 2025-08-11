@@ -1,6 +1,5 @@
 import { ProfileAvatar } from "@/components/common/AvatarProfile";
 import Badge from "@/components/common/badge";
-import { ParticlesBackground } from "@/components/layout/Particles";
 
 interface HeroProps {
     education?: string;
