@@ -8,7 +8,7 @@ const Projects = () => {
         {
             title: 'SkillForge',
             description: "AI-powered platform that generates personalized skill trees and learning paths for any skill!",
-            img: "/public/assets/Skillforge proto.png",
+            img: "/assets/Skillforge proto.png",
             techStack: ["React", "Node.js", "PostgreSQL", "OpenAI API", "TypeScript"],
             github: "https://github.com/username/skillforge",
             demo: "https://skillforge-demo.com"
@@ -16,7 +16,7 @@ const Projects = () => {
         {
             title: 'CS50 Finance',
             description: "Finance Web App that allows you to buy, sell, and search stock with real time AJAX updates",
-            img: "/public/assets/cs50finance.png",
+            img: "/assets/cs50finance.png",
             techStack: ["HTML", "CSS", "JavaScript", "Flask", "Jinja", "Python"],
             github: "https://github.com/username/cs50-finance",
             demo: "https://cs50-finance-demo.com"
@@ -24,7 +24,7 @@ const Projects = () => {
         {
             title: "Signify",
             description: "An ASL sign language translator with an emotion recognition model built in for uniqueness",
-            img: "/public/assets/Signify.jpeg",
+            img: "/assets/Signify.jpeg",
             github: "https://github.com/Shehwaz81/personal-portfolio/",
             demo: "https://devpost.com/software/919909/joins/efTxB2B2XmK004od6BrN-w",
             techStack: ["React", "TypeScript", "Flask", "TensorFlow", "OpenCV"],
@@ -32,7 +32,7 @@ const Projects = () => {
         {
             title: "WRO Robot",
             description: "Helped code a robot which was used to compete in WRO National (Montreal) using OOP",
-            img: "/public/assets/WRO.jpg",
+            img: "/assets/WRO.jpg",
             github: "https://github.com/Shehwaz81/personal-portfolio/",
             demo: "/src/assets/WR",
             techStack: ["MicroPython", "OOP", "ESP32",],

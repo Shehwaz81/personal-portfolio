@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import CubeIcon from '../../../public/assets/cube-10018.svg'
+import CubeIcon from '../../assets/cube-10018.svg'
 import { Download, Mail, Github, Linkedin } from 'lucide-react';
 
 interface NavbarProps {
@@ -29,7 +29,7 @@ export const Navbar = ({
 
   const handleDownloadResume = () => {
     const link = document.createElement('a');
-    link.href = 'public/assets/resume.pdf';
+    link.href = 'public/assets/Resume-1.pdf';
     link.download = 'Shehwaz_Singh_Saini_Resume.pdf';
     link.click();
   };
@@ -38,17 +38,17 @@ export const Navbar = ({
     { 
       icon: Mail,
       label: 'Email',
-      onClick: () => window.open('shehwazlongia@gmail.com')
+      onClick: () => window.open('mailto:shehwazlongia@gmail.com')
     },
     { 
       icon: Github,
       label: 'GitHub',
-      onClick: () => window.open('https://github.com/shehwaz81', '_blank')
+      onClick: () => window.open('https://github.com/Shehwaz81', '_blank')
     },
     { 
       icon: Linkedin,
       label: 'LinkedIn',
-      onClick: () => window.open('https://linkedin.com/in/shehwazsaini', '_blank')
+      onClick: () => window.open('https://www.linkedin.com/in/shehwaz-saini-566494318/', '_blank')
     },
   ];
 
@@ -64,7 +64,7 @@ export const Navbar = ({
           <img 
             src={CubeIcon} 
             alt="Cube Icon" 
-            className="w-6 h-6 mr-4 transition-transform duration-500 group-hover:rotate-[360deg] group-hover:scale-110" 
+            className="scale-120 w-6 h-6 mr-4 transition-transform duration-500 group-hover:rotate-[360deg] group-hover:scale-130" 
           />
           <div className="border-l border-white/20 h-6 mr-6"/>
           <div className="flex space-x-6">
@@ -93,7 +93,7 @@ export const Navbar = ({
         </div>
       </nav>
 
-      {/* Expandable Actions */}
+      
       <div 
         className={`bg-black/90 backdrop-blur-md rounded-full transition-all duration-500 ease-out overflow-hidden cursor-pointer border border-gray-700/50 hover:border-cyan-400/30 hover:shadow-[0_0_15px_rgba(34,211,238,0.2)] ${
           isExpanded ? 'w-72 h-12' : 'w-24 h-10'
