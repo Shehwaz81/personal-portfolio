@@ -47,7 +47,7 @@ const Projects = () => {
             img: "/assets/timetic.png",
             github: "https://github.com/Shehwaz81/tic-tac-toe",
             demo: "https://tic-tac-toe-seven-ashen-70.vercel.app/",
-            techStack: ["React", "JavaScript", "Vite",],    
+            techStack: ["React", "JavaScript", "CSS", "Vite",],    
             hasDemo: true
         }
     ]

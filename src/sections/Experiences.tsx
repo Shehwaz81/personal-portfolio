@@ -8,7 +8,7 @@ const Exp = () => {
       content: (
         <div>
             <p className="text-xs font-normal md:text-sm text-white max-w-180 mx-auto max-w-180 mx-auto">
-                CS50x was what jump started my dev journey. From C fundamentals to full-stack development, I built diverse projects that taught me how to think like a developer, and more importantly, how to problem solve effectively.
+                <span className='text-cyan-300'>CS50X was what jump started my dev journey</span>. From C fundamentals to full-stack development, I built diverse projects that taught me how to think like a developer, and more importantly, <span className='text-cyan-300'>how to problem solve effectively</span>.
             </p>
             <div className="grid grid-cols-2 gap-4 overflow-hidden p-5 scale-90">
             <img
@@ -48,7 +48,7 @@ const Exp = () => {
         content: (
         <div>
             <p className="text-xs font-normal md:text-sm text-white max-w-180 mx-auto">
-                Led team research project on infectious disease and analyzed measles outbreak data using R programming to create statistical models and regression visualizations. Presented research findings at University of Windsor.
+                Led team research project on infectious disease and <span className='text-cyan-300'> analyzed measles outbreak data using R programming to create statistical models and regression visualizations</span>. Presented research findings at University of Windsor.
             </p>
             <div className="grid grid-cols-2 gap-4 overflow-hidden p-5 scale-90">
                 <img
@@ -88,7 +88,7 @@ const Exp = () => {
         content: (
         <div>
             <p className="text-xs font-normal md:text-sm text-white max-w-180 mx-auto">
-                Contributed to robotics team that achieved 2nd place at WRO Nationals. Joined the project in progress and quickly adapted to contribute to the codebase while collaborating under competition pressure.
+                Contributed to robotics team that <span className='text-cyan-300'>achieved 2nd place at WRO Nationals Montreal</span>. Joined the project in progress and quickly adapted to contribute to the codebase while collaborating under competition pressure.
             </p>
             <div className="grid grid-cols-2 gap-4 overflow-hidden p-5 scale-90">
                 <img
@@ -128,8 +128,7 @@ const Exp = () => {
         content: (
         <div>
             <p className="text-xs font-normal md:text-sm text-white max-w-180 mx-auto">
-                Working as a software development intern, implementing AI integrations and server-side functionality. Currently developing OpenAI API integration to enhance the platform's capabilities while collaborating with experienced developers on systems.
-            </p>
+                Implemented AI system that generates SEO-optimized product descriptions and FAQs from database content, <span className='text-cyan-300'>reducing projected costs by 50% and saving hours of manual content creation.</span></p>
             <div className="grid grid-cols-2 gap-4 overflow-hidden p-5 scale-90">
                 <img
                 src="/assets/TrueWebPro.png"
