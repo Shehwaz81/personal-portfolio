@@ -38,7 +38,16 @@ const Projects = () => {
             img: "/assets/WRO.jpg",
             github: "https://github.com/Shehwaz81/personal-portfolio/",
             demo: "https://wro-association.org/",
-            techStack: ["MicroPython", "OOP", "ESP32",],
+            techStack: ["MicroPython", "OOP", "ESP32", "PyBricks"],
+            hasDemo: true
+        },
+        {
+            title: "Tic Tac Toe",
+            description: "A tic tac toe game with a twist. Jump back in time and alter the future of the game effortlessly",
+            img: "/assets/timetic.png",
+            github: "https://github.com/Shehwaz81/tic-tac-toe",
+            demo: "https://tic-tac-toe-seven-ashen-70.vercel.app/",
+            techStack: ["React", "JavaScript", "Vite",],    
             hasDemo: true
         }
     ]
