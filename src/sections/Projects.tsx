@@ -37,7 +37,7 @@ const Projects = () => {
             description: "Helped code a robot which was used to compete in WRO National (Montreal) using OOP",
             img: "/assets/WRO.jpg",
             github: "https://github.com/Shehwaz81/personal-portfolio/",
-            demo: "/src/assets/WR",
+            demo: "https://wro-association.org/",
             techStack: ["MicroPython", "OOP", "ESP32",],
             hasDemo: true
         }
