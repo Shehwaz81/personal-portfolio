@@ -45,13 +45,13 @@ export const About = () => {
                 This persistence led me to <span className="text-cyan-300 font-medium">Harvard's CS50x course</span>,
                 spending countless hours debugging code and wrestling with algorithms.
                 It opened doors I never imagined, like the opportunity to compete nationally in <span className="text-cyan-300 font-medium">WRO robotics</span> where me and my friend placed <span className="text-cyan-300 font-medium">2nd in Canada</span>, 
-                and the opporuntiy to intern at a small <span className="text-cyan-300 font-medium">Startup</span>, communicating and building along side professional devs.
+                and the opportunity to intern at a small <span className="text-cyan-300 font-medium">Startup</span>, communicating and building along side professional devs.
                 </p>
             </div>
 
             <div className="relative pl-6">
                 <p className="text-slate-200 text-base sm:text-base lg:text-lg leading-relaxed tracking-wide break-words">
-                Now, I’m advancing in competitive programming and building projects, proving again that effort beats raw talent every time.
+                Now, I’m advancing in competitive programming and building projects, proving again that effort beats raw talent every time, but this time supplemented with passion, vision, and curiousity.
                 </p>
             </div>
             </div>
