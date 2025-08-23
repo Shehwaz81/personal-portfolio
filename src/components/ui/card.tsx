@@ -37,15 +37,14 @@ const Card = ({
   return (
     <div
       style={style}
-      className={`w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl bg-gradient-to-br from-slate-900/60 to-slate-800/40 transform hover:-translate-y-1 rounded-2xl backdrop-blur-sm overflow-hidden ring-1 ring-slate-600/40 hover:drop-shadow-[0_0_0.3rem_cyan] hover:ring-cyan-500/50 hover:shadow-[0_8px_32px_rgba(6,182,212,0.15)] transition-all duration-300 mx-auto flex flex-col`}
+      className={`w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl bg-gradient-to-br from-slate-900/60 to-slate-800/40 transform hover:-translate-y-1 rounded-2xl backdrop-blur-sm overflow-hidden ring-1 ring-slate-600/40 hover:box-shadow-[0_0_0.5rem_cyan] hover:ring-cyan-500/50 transition-all duration-300 mx-auto flex flex-col`}
     >
       <div className={`relative overflow-hidden bg-slate-800/30 h-64 duration-450 hover:scale-105 ${className}`}>
         <img
           src={img}
           alt={`${title} preview`}
-          className={`w-full h-full object-cover transition-transform duration-500 transform`}
+          className={`w-full h-full object-cover transition-transform transform`}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 via-transparent to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300" />
       </div>
 
       <div className="p-7 flex flex-col flex-grow">
