@@ -1,3 +1,4 @@
+import { useTypewriter, Cursor } from 'react-simple-typewriter'
 import { ProfileAvatar } from "@/components/common/AvatarProfile";
 import Badge from "@/components/common/badge";
 
@@ -14,6 +15,19 @@ export const Hero = ({
   serious="Competitive Programmer",
   hobby="Speed Cuber"
 } : HeroProps) => {
+
+  const [text] = useTypewriter({
+    words: [
+      "a 16-year-old developer",
+      "a Competitive Programmer",
+      "solving problems with AI",
+      "a Speed Cuber",
+      "an Aspiring Founder"
+    ],
+    loop: true,
+    delaySpeed: 2000,
+  });
+
   const scrollToSection = (sectionId: string, offset = 0) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -39,7 +53,8 @@ export const Hero = ({
             Shehwaz Saini
           </h1>
           <p className="text-xl lg:text-2xl text-slate-200 max-w-2xl">
-            Building <span className="text-cyan-300 font-medium">AI-driven solutions</span> for the world to use
+            I'm <span className="text-cyan-300 font-medium"> {text}</span>
+            <Cursor cursorStyle="|" />
           </p>
 
           <div className="flex flex-wrap justify-center gap-1 sm:gap-2 w-full sm:w-auto">
