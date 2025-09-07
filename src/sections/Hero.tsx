@@ -69,7 +69,7 @@ export const Hero = ({
               See What I've Built
             </button>
             <button onClick={() => window.open("https://www.linkedin.com/in/shehwaz-saini-566494318/")} className="w-full sm:w-auto text-sm sm:text-base px-4 sm:px-8 py-2 sm:py-3 border-2 border-cyan-400 text-cyan-400 font-semibold rounded-full hover:bg-cyan-400 hover:text-slate-900 transition-colors duration-300">
-              Colaberate
+              Collaborate
             </button>
           </div>
 
