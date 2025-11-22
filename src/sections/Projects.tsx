@@ -60,8 +60,8 @@ const Projects = () => {
             hasDemo: true
         }
     ]
-    // if user clicked see more, make array all objects, else make the array the first 2 projects
-    const visibleProjects = seeMore ? allProjects : allProjects.slice(0, 2)
+    // if user clicked see more, make array all objects, else make the array the first 3 projects
+    const visibleProjects = seeMore ? allProjects : allProjects.slice(0, 3)
 
     const projectList = visibleProjects.map((project, index) => (
         <div 

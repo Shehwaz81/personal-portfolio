@@ -1,28 +1,14 @@
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
 import { ProfileAvatar } from "@/components/common/AvatarProfile";
-import Badge from "@/components/common/badge";
 
-interface HeroProps {
-    education?: string;
-    achievement?: string;
-    serious?: string;
-    hobby?: string;
-  }
-
-export const Hero = ({
-  education="CS50x",
-  achievement="WRO International Champion",
-  serious="Competitive Programmer",
-  hobby="Speed Cuber"
-} : HeroProps) => {
+export const Hero = () => {
 
   const [text] = useTypewriter({
     words: [
-      "a 16-year-old developer",
-      "a Competitive Programmer",
-      "solving problems with AI",
-      "a Speed Cuber",
-      "an Aspiring Founder"
+      "Building the future",
+      "Solving real problems",
+      "Creating impact at scale",
+      "Turning ideas into reality"
     ],
     loop: true,
     delaySpeed: 2000,
@@ -40,44 +26,83 @@ export const Hero = ({
   };
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden w-full">
-      <div className="flex flex-col lg:flex-row items-center lg:gap-8 z-10 px-6 max-w-8xl mx-auto ">
+      <div className="flex flex-col items-center z-10 px-6 max-w-5xl mx-auto text-center space-y-12">
         
-        <div className="flex-shrink-0 !space-y-0">
+        {/* Minimalist Profile */}
+        <div className="flex-shrink-0">
           <ProfileAvatar />
         </div>
-
-        <div className="h-100 mr-1 ml-1 hidden lg:block "/>
         
-        <div className="flex flex-col space-y-7 text-center">
-          <h1 className="text-5xl lg:text-7xl font-bold bg-gradient-to-r from-white/70 to-cyan-300 bg-clip-text text-transparent">
+        {/* Main Headline - Steve Jobs Style */}
+        <div className="space-y-6">
+          <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold tracking-tight text-white">
             Shehwaz Saini
           </h1>
-          <p className="text-xl lg:text-2xl text-slate-200 max-w-2xl">
-            I'm <span className="text-cyan-300 font-medium"> {text}</span>
+          
+          {/* Founder Label */}
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 rounded-full backdrop-blur-sm">
+            <div className="w-2 h-2 bg-cyan-400 rounded-full animate-pulse" />
+            <span className="text-sm font-medium text-slate-300">Aspiring Founder & Builder</span>
+          </div>
+        </div>
+
+        {/* Mission Statement - Minimal & Powerful */}
+        <div className="space-y-3 max-w-3xl">
+          <p className="text-2xl sm:text-3xl lg:text-4xl font-light text-white/90 leading-relaxed">
+            {text}
             <Cursor cursorStyle="|" />
           </p>
+          <p className="text-base sm:text-lg text-slate-400 font-light max-w-2xl mx-auto leading-relaxed">
+            16-year-old developer. WRO International Champion. 
+            <br className="hidden sm:block" />
+            Building products that matter.
+          </p>
+        </div>
 
-          <div className="flex flex-wrap justify-center gap-1 sm:gap-2 w-full sm:w-auto">
-            <Badge  className="hover:scale-102 hover:border-cyan-500" content={achievement}/>
-            <Badge  className="hover:scale-102 hover:border-cyan-500" content={education}/>
-            <Badge  className="hover:scale-102 hover:border-cyan-500" content={serious}/>  
-            <Badge  className="hover:scale-102 hover:border-cyan-500" content={hobby}/>
+        {/* Minimal Achievements */}
+        <div className="flex flex-wrap justify-center gap-6 text-center pt-4">
+          <div className="group">
+            <div className="text-3xl sm:text-4xl font-bold text-white group-hover:text-cyan-400 transition-colors">15+</div>
+            <div className="text-xs sm:text-sm text-slate-400 mt-1">Projects</div>
           </div>
+          <div className="w-px h-12 bg-white/10"></div>
+          <div className="group">
+            <div className="text-3xl sm:text-4xl font-bold text-white group-hover:text-cyan-400 transition-colors">1st</div>
+            <div className="text-xs sm:text-sm text-slate-400 mt-1">WRO Int'l</div>
+          </div>
+          <div className="w-px h-12 bg-white/10"></div>
+          <div className="group">
+            <div className="text-3xl sm:text-4xl font-bold text-white group-hover:text-cyan-400 transition-colors">∞</div>
+            <div className="text-xs sm:text-sm text-slate-400 mt-1">Ambition</div>
+          </div>
+        </div>
 
-          <div className="flex flex-col sm:flex-row gap-3 justify-center ">
-            <button onClick={() => scrollToSection("projects", 200)} className="relative w-full sm:w-auto text-sm sm:text-base px-3 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-semibold rounded-full hover:from-blue-500 hover:to-cyan-500 hover:scale-105 hover:shadow-[0_0_30px_rgba(6,182,212,0.4)] transition-all ease-in-out duration-300">
-              See What I've Built
-            </button>
-            <button onClick={() => window.open("https://www.linkedin.com/in/shehwaz-saini-566494318/")} className="w-full sm:w-auto text-sm sm:text-base px-4 sm:px-8 py-2 sm:py-3 border-2 border-cyan-400 text-cyan-400 font-semibold rounded-full hover:bg-cyan-400 hover:text-slate-900 transition-colors duration-300">
-              Colaberate
-            </button>
-          </div>
+        {/* Minimal CTA - Apple Style */}
+        <div className="flex flex-col sm:flex-row gap-4 pt-4">
+          <button 
+            onClick={() => scrollToSection("projects", 200)} 
+            className="group px-8 py-3.5 bg-white text-slate-900 font-medium rounded-full hover:bg-white/90 transition-all duration-300 transform hover:scale-105 hover:shadow-[0_8px_30px_rgba(255,255,255,0.12)]"
+          >
+            <span className="flex items-center gap-2">
+              View My Work
+              <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </span>
+          </button>
+          <button 
+            onClick={() => window.open("https://www.linkedin.com/in/shehwaz-saini-566494318/")} 
+            className="px-8 py-3.5 border border-white/20 text-white font-medium rounded-full hover:bg-white/5 hover:border-white/40 transition-all duration-300"
+          >
+            Let's Connect
+          </button>
+        </div>
 
-          {/* Status */}
-          <div className="flex items-center justify-center gap-2 text-sm text-slate-400">
-            <div className="w-2 h-2 bg-cyan-400 rounded-full animate-pulse" />
-            <span>Building SkillForge • Changing how we level up</span>
-          </div>
+        {/* Current Focus - Minimal Status */}
+        <div className="pt-8">
+          <p className="text-sm text-slate-500 font-light">
+            Currently building <span className="text-cyan-400 font-medium">SkillForge</span> • Transforming skill acquisition
+          </p>
         </div>
 
       </div>
