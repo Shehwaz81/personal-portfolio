@@ -6,6 +6,15 @@ const Projects = () => {
     // list of projects
     const allProjects = [
         {
+            title: 'SEO Content Generator',
+            description: "AI-powered tool that instantly generates SEO-friendly product descriptions, FAQs, and marketing content for TrueWebPro clients",
+            img: "/assets/TrueWebPro.png",
+            techStack: ["React", "Node.js", "OpenAI API", "Express", "Tailwind CSS"],
+            github: "",
+            demo: "https://truewebproai.onrender.com/",
+            hasDemo: true
+        },
+        {
             title: 'SkillForge',
             description: "AI-powered platform that generates personalized skill trees and learning paths for any skill!",
             img: "/assets/Skillforge proto.png",
