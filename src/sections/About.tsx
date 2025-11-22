@@ -11,7 +11,7 @@ export const About = () => {
             transition-all hover:ring-cyan-500/60 hover:ring-2
             hover:shadow-[0_0_5rem_rgba(0,255,255,0.3)] duration-400 ease-in-out"
         >
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold
+            <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold
             bg-gradient-to-r from-white to-cyan-300 bg-clip-text text-transparent
             text-center mb-6 sm:mb-8">
             My Journey
@@ -44,8 +44,9 @@ export const About = () => {
                 <p className="text-slate-200 text-base sm:text-base lg:text-lg leading-relaxed tracking-wide break-words">
                 This persistence led me to <span className="text-cyan-300 font-medium">Harvard's CS50x course</span>,
                 spending countless hours debugging code and wrestling with algorithms.
-                It opened doors I never imagined, like the opportunity to compete nationally in <span className="text-cyan-300 font-medium">WRO robotics</span> where me and my friend placed <span className="text-cyan-300 font-medium">2nd in Canada</span>, 
-                and the opportunity to intern at a small <span className="text-cyan-300 font-medium">Startup</span>, communicating and building along side professional devs.
+                It opened doors I never imagined, like the opportunity to compete in <span className="text-cyan-300 font-medium">WRO robotics</span> where my team placed <span className="text-cyan-300 font-medium">2nd in Canada</span>,
+                then went on to <span className="text-cyan-300 font-semibold">win the WRO International Invitational Championship in Panama</span>. 
+                I also got the opportunity to intern at a small <span className="text-cyan-300 font-medium">startup</span>, communicating and building alongside professional developers.
                 </p>
             </div>
 

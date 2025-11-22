@@ -16,7 +16,7 @@ const Projects = () => {
         },
         {
             title: 'CS50 Finance',
-            description: "Finance Web App that allows you to buy, sell, and search stock with real time AJAX updates",
+            description: "Stock trading web app with real-time AJAX updates for buying, selling, and portfolio management",
             img: "/assets/cs50finance.png",
             techStack: ["HTML", "CSS", "JavaScript", "Flask", "Jinja", "Python"],
             github: "https://github.com/username/cs50-finance",
@@ -25,7 +25,7 @@ const Projects = () => {
         },
         {
             title: "Signify",
-            description: "An ASL sign language translator with an emotion recognition model built in for uniqueness",
+            description: "ASL sign language translator with emotion recognition using computer vision and deep learning",
             img: "/assets/Signify.jpeg",
             github: "https://github.com/Shehwaz81/Signify",
             demo: "https://devpost.com/software/919909/joins/efTxB2B2XmK004od6BrN-w",
@@ -33,8 +33,8 @@ const Projects = () => {
             hasDemo: true
         },
         {
-            title: "WRO Robot",
-            description: "Helped code a robot which was used to compete in WRO National (Montreal) using OOP",
+            title: "WRO Robot 🏆",
+            description: "Coded an autonomous robot that won WRO International Championship in Panama after placing 2nd at Nationals",
             img: "/assets/WRO.jpg",
             github: "https://github.com/Shehwaz81/personal-portfolio/",
             demo: "https://wro-association.org/",
@@ -43,11 +43,11 @@ const Projects = () => {
         },
         {
             title: "Tic Tac Toe",
-            description: "A tic tac toe game with a twist. Jump back in time and alter the future of the game effortlessly",
+            description: "Interactive Tic Tac Toe with time travel - jump back to any move and explore alternate game outcomes",
             img: "/assets/timetic.png",
             github: "https://github.com/Shehwaz81/tic-tac-toe",
             demo: "https://tic-tac-toe-seven-ashen-70.vercel.app/",
-            techStack: ["React", "JavaScript", "CSS", "Vite",],    
+            techStack: ["React", "JavaScript", "CSS", "Vite"],    
             hasDemo: true
         }
     ]

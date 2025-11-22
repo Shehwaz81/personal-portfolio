@@ -11,7 +11,7 @@ interface HeroProps {
 
 export const Hero = ({
   education="CS50x",
-  achievement="WRO National 2nd",
+  achievement="WRO International Champion",
   serious="Competitive Programmer",
   hobby="Speed Cuber"
 } : HeroProps) => {
@@ -65,11 +65,11 @@ export const Hero = ({
           </div>
 
           <div className="flex flex-col sm:flex-row gap-3 justify-center ">
-            <button onClick={() => scrollToSection("projects", 200)} className="relative w-full sm:w-auto text-sm sm:text-base px-3 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-semibold rounded-full hover:from-blue-500 hover:to-cyan-500 hover:scale-105 transition-transform ease-in-out duration-300">
+            <button onClick={() => scrollToSection("projects", 200)} className="relative w-full sm:w-auto text-sm sm:text-base px-3 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-semibold rounded-full hover:from-blue-500 hover:to-cyan-500 hover:scale-105 hover:shadow-[0_0_30px_rgba(6,182,212,0.4)] transition-all ease-in-out duration-300">
               See What I've Built
             </button>
             <button onClick={() => window.open("https://www.linkedin.com/in/shehwaz-saini-566494318/")} className="w-full sm:w-auto text-sm sm:text-base px-4 sm:px-8 py-2 sm:py-3 border-2 border-cyan-400 text-cyan-400 font-semibold rounded-full hover:bg-cyan-400 hover:text-slate-900 transition-colors duration-300">
-              Collaborate
+              Colaberate
             </button>
           </div>
 
