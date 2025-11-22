@@ -112,47 +112,34 @@ export const About = () => {
                 </div>
             </div>
 
-<<<<<<< HEAD
-            <div className="relative pl-6 flex">
-                <div className="absolute left-0 top-0 w-1 h-full bg-gradient-to-b from-cyan-400 to-blue-500 rounded-full block sm:block"></div>
-                <p className="text-slate-200 text-base sm:text-base lg:text-lg leading-relaxed tracking-wide break-words">
-                Through the years I've discovered 3 passions of mine: <span className="text-cyan-300 font-medium">cubing, math, and problem solving</span>.
-                But I wasn’t initially good at any of them. My first Rubik’s Cube took hours, and math concepts were slow to click.
-                My problem-solving skills lagged behind my peers—but remembering my parents’ example, I knew the answer was hard work.
-                </p>
+            {/* Bottom Stats Bar */}
+            <div className="mt-12 p-6 sm:p-8 bg-gradient-to-r from-slate-900/50 to-slate-900/30 rounded-xl backdrop-blur-sm ring-1 ring-cyan-500/30">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    {[
+                        { number: '15+', label: 'Projects Built', icon: '🚀' },
+                        { number: '1st', label: 'WRO Int\'l Place', icon: '🏆' },
+                        { number: '10+', label: 'Technologies', icon: '⚡' },
+                        { number: '∞', label: 'Dedication', icon: '💡' }
+                    ].map((stat, i) => (
+                        <div key={i} className="text-center group">
+                            <div className="text-2xl sm:text-3xl mb-2 group-hover:scale-110 transition-transform inline-block">
+                                {stat.icon}
+                            </div>
+                            <div className="text-2xl sm:text-3xl font-bold text-cyan-300 mb-1">
+                                {stat.number}
+                            </div>
+                            <div className="text-xs sm:text-sm text-slate-400">{stat.label}</div>
+                        </div>
+                    ))}
+                </div>
             </div>
 
-            <div className="relative pl-6 flex">
-                <div className="absolute left-0 top-0 w-1 h-full bg-gradient-to-b from-cyan-400 to-blue-500 rounded-full block sm:block"></div>
-                <p className="text-slate-200 text-base sm:text-base lg:text-lg leading-relaxed tracking-wide break-words">
-                This persistence led me to <span className="text-cyan-300 font-medium">Harvard's CS50x course</span>,
-                spending countless hours debugging code and wrestling with algorithms.
-                It opened doors I never imagined, like the opportunity to compete in <span className="text-cyan-300 font-medium">WRO robotics</span> where my team placed <span className="text-cyan-300 font-medium">2nd in Canada</span>,
-                then went on to <span className="text-cyan-300 font-semibold">win the WRO International Invitational Championship in Panama</span>. 
-                I also got the opportunity to intern at a small <span className="text-cyan-300 font-medium">startup</span>, communicating and building alongside professional developers.
-                </p>
-            </div>
-
-            <div className="relative pl-6">
-                <p className="text-slate-200 text-base sm:text-base lg:text-lg leading-relaxed tracking-wide break-words">
-                Now, I’m advancing in competitive programming and building projects, proving again that effort beats raw talent every time, but this time supplemented with passion, vision, and curiousity.
-                </p>
-            </div>
-            </div>
-
-            <div className="flex justify-center pt-6">
-            <div className="flex items-center gap-2 text-xs sm:text-sm text-slate-400">
-                <div className="w-2 h-2 bg-cyan-400 rounded-full animate-pulse block sm:block"></div>
-                <span>Currently building SkillForge • Next: Changing the world</span>
-            </div>
-=======
             {/* Current Status */}
             <div className="flex justify-center mt-8">
                 <div className="flex items-center gap-2 text-xs sm:text-sm text-slate-400 bg-slate-900/40 px-6 py-3 rounded-full border border-cyan-500/20 backdrop-blur-sm">
                     <div className="w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
                     <span>Currently building SkillForge • Next: Changing the world</span>
                 </div>
->>>>>>> 2011846 (add cube to hero page and revamp hero page)
             </div>
         </div>
     </section>
