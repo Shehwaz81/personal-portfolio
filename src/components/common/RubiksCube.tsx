@@ -22,49 +22,89 @@ interface CubeletProps {
 const Cubelet = ({ position, colors: cubeColors }: CubeletProps) => {
   return (
     <group position={position}>
-      <RoundedBox args={[0.95, 0.95, 0.95]} radius={0.05} smoothness={4}>
-        <meshStandardMaterial color={colors.black} />
+      <RoundedBox args={[0.95, 0.95, 0.95]} radius={0.08} smoothness={8}>
+        <meshStandardMaterial 
+          color={colors.black}
+          metalness={0.3}
+          roughness={0.4}
+        />
       </RoundedBox>
       {/* Front face */}
       {cubeColors[0] && (
         <mesh position={[0, 0, 0.48]}>
           <planeGeometry args={[0.85, 0.85]} />
-          <meshStandardMaterial color={cubeColors[0]} />
+          <meshStandardMaterial 
+            color={cubeColors[0]}
+            metalness={0.1}
+            roughness={0.3}
+            emissive={cubeColors[0]}
+            emissiveIntensity={0.05}
+          />
         </mesh>
       )}
       {/* Back face */}
       {cubeColors[1] && (
         <mesh position={[0, 0, -0.48]} rotation={[0, Math.PI, 0]}>
           <planeGeometry args={[0.85, 0.85]} />
-          <meshStandardMaterial color={cubeColors[1]} />
+          <meshStandardMaterial 
+            color={cubeColors[1]}
+            metalness={0.1}
+            roughness={0.3}
+            emissive={cubeColors[1]}
+            emissiveIntensity={0.05}
+          />
         </mesh>
       )}
       {/* Top face */}
       {cubeColors[2] && (
         <mesh position={[0, 0.48, 0]} rotation={[-Math.PI / 2, 0, 0]}>
           <planeGeometry args={[0.85, 0.85]} />
-          <meshStandardMaterial color={cubeColors[2]} />
+          <meshStandardMaterial 
+            color={cubeColors[2]}
+            metalness={0.1}
+            roughness={0.3}
+            emissive={cubeColors[2]}
+            emissiveIntensity={0.05}
+          />
         </mesh>
       )}
       {/* Bottom face */}
       {cubeColors[3] && (
         <mesh position={[0, -0.48, 0]} rotation={[Math.PI / 2, 0, 0]}>
           <planeGeometry args={[0.85, 0.85]} />
-          <meshStandardMaterial color={cubeColors[3]} />
+          <meshStandardMaterial 
+            color={cubeColors[3]}
+            metalness={0.1}
+            roughness={0.3}
+            emissive={cubeColors[3]}
+            emissiveIntensity={0.05}
+          />
         </mesh>
       )}
       {/* Right face */}
       {cubeColors[4] && (
         <mesh position={[0.48, 0, 0]} rotation={[0, Math.PI / 2, 0]}>
           <planeGeometry args={[0.85, 0.85]} />
-          <meshStandardMaterial color={cubeColors[4]} />
+          <meshStandardMaterial 
+            color={cubeColors[4]}
+            metalness={0.1}
+            roughness={0.3}
+            emissive={cubeColors[4]}
+            emissiveIntensity={0.05}
+          />
         </mesh>
       )}
       {/* Left face */}
       {cubeColors[5] && (
         <mesh position={[-0.48, 0, 0]} rotation={[0, -Math.PI / 2, 0]}>
           <planeGeometry args={[0.85, 0.85]} />
-          <meshStandardMaterial color={cubeColors[5]} />
+          <meshStandardMaterial 
+            color={cubeColors[5]}
+            metalness={0.1}
+            roughness={0.3}
+            emissive={cubeColors[5]}
+            emissiveIntensity={0.05}
+          />
         </mesh>
       )}
     </group>
@@ -76,8 +116,10 @@ export const RubiksCube = () => {
 
   useFrame((state) => {
     if (groupRef.current) {
-      groupRef.current.rotation.y = state.clock.elapsedTime * 0.3;
-      groupRef.current.rotation.x = Math.sin(state.clock.elapsedTime * 0.2) * 0.2;
+      // Smoother, more dynamic rotation with slight wobble
+      groupRef.current.rotation.y = state.clock.elapsedTime * 0.25;
+      groupRef.current.rotation.x = Math.sin(state.clock.elapsedTime * 0.15) * 0.15 + 0.1;
+      groupRef.current.rotation.z = Math.sin(state.clock.elapsedTime * 0.1) * 0.05;
     }
   });
 

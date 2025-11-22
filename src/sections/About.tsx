@@ -23,15 +23,20 @@ export const About = () => {
                             <Canvas className="cursor-grab active:cursor-grabbing">
                                 <Suspense fallback={null}>
                                     <PerspectiveCamera makeDefault position={[0, 0, 8]} />
-                                    <ambientLight intensity={0.6} />
-                                    <directionalLight position={[10, 10, 5]} intensity={1.2} />
-                                    <directionalLight position={[-10, -10, -5]} intensity={0.6} />
-                                    <pointLight position={[0, 0, 10]} intensity={0.5} color="#00ffff" />
+                                    <ambientLight intensity={0.5} />
+                                    <directionalLight position={[10, 10, 5]} intensity={1.5} castShadow />
+                                    <directionalLight position={[-10, -10, -5]} intensity={0.8} />
+                                    <pointLight position={[0, 0, 10]} intensity={0.8} color="#00ffff" />
+                                    <pointLight position={[5, 5, 5]} intensity={0.4} color="#06b6d4" />
+                                    <pointLight position={[-5, -5, -5]} intensity={0.4} color="#0ea5e9" />
                                     <RubiksCube />
                                     <OrbitControls 
                                         enableZoom={false} 
                                         autoRotate={false}
                                         enablePan={false}
+                                        enableDamping={true}
+                                        dampingFactor={0.05}
+                                        rotateSpeed={0.8}
                                     />
                                 </Suspense>
                             </Canvas>
