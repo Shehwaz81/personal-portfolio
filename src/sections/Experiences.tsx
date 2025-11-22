@@ -84,11 +84,11 @@ const Exp = () => {
         )
     },
     {
-        title: "WRO International Panama 🏆",
+        title: "WRO Panama",
         content: (
         <div>
             <p className="text-xs font-normal md:text-sm text-white max-w-180 mx-auto">
-                After placing <span className='text-cyan-300'>2nd at WRO Nationals in Montreal</span>, our team advanced to represent Canada at the <span className='text-cyan-300 font-semibold'>WRO International Invitational Championship in Panama</span>. Competing against teams from around the world, we <span className='text-cyan-300 font-semibold'>won the championship</span>, showcasing teamwork, problem-solving, and adaptability on an international stage.
+                After placing <span className='text-cyan-300'>2nd at WRO Nationals in Montreal</span>, our team advanced to represent Canada at the <span className='text-cyan-300 font-semibold'>WRO International Invitational Championship in Panama</span>. Competing against teams from around the world, we <span className='text-cyan-300 font-semibold'>won the championship</span>, showcasing teamwork, problem-solving, adaptability, and innovation on an international stage.
             </p>
             <div className="grid grid-cols-2 gap-4 overflow-hidden p-5 scale-90">
                 <img
