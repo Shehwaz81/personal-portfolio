@@ -29,7 +29,7 @@ export const Navbar = ({
 
   const handleDownloadResume = () => {
     const link = document.createElement("a");
-    link.href = "public/assets/Resume-1.pdf";
+    link.href = "public/assets/Resume-2.pdf";
     link.download = "Shehwaz_Singh_Saini_Resume.pdf";
     link.click();
   };
@@ -38,7 +38,7 @@ export const Navbar = ({
     {
       icon: Mail,
       label: "Email",
-      onClick: () => window.open("mailto:shehwazlongia@gmail.com"),
+      onClick: () => window.open("mailto:shehwaz.longia@gmail.com"),
     },
     {
       icon: Github,
@@ -50,7 +50,7 @@ export const Navbar = ({
       label: "LinkedIn",
       onClick: () =>
         window.open(
-          "https://www.linkedin.com/in/shehwaz-saini-566494318/",
+          "https://www.linkedin.com/in/shehwazsaini",
           "_blank"
         ),
     },
