@@ -21,7 +21,7 @@ export const ProfileAvatar = ({
     return (
     <div className="relative group flex h-105 w-105 justify-center items-center transform rounded-full">
         <div
-            className="absolute -inset-2 rounded-full blur-xl opacity-0 opacity-15 transition-all duration-700"
+            className="absolute -inset-0.3 rounded-full blur-xl opacity-0 opacity-15 transition-all duration-700"
             style={{ backgroundColor: '#06b6d4' }}
         />
       <Avatar className={cn(

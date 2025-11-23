@@ -85,7 +85,7 @@ const Projects = () => {
     ))
     return (
         <>
-            <h1 id="projects" className="text-4xl font-bold bg-gradient-to-r from-white to-cyan-300 bg-clip-text text-transparent text-center mb-10 mt-15 p-2">
+            <h1 id="projects" className="text-4xl font-bold text-white text-center mb-10 mt-15 p-2">
                 Projects
             </h1>
             
@@ -97,8 +97,8 @@ const Projects = () => {
                 <div className="text-center mt-8">
                     <button 
                         onClick={() => setSeeMore(!seeMore)}
-                        className="px-8 py-3 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 hover:from-cyan-500/30 hover:to-blue-500/30 
-                                 rounded-xl border border-cyan-500/40 hover:border-cyan-400/70 text-cyan-300 hover:text-white 
+                        className="px-8 py-3 bg-white/5 hover:bg-white/10 
+                                 rounded-xl border border-white/20 hover:border-white/40 text-white 
                                  font-medium transition-all duration-300 transform hover:scale-105"
                     >
                         {seeMore ? 'Show Less' : 'See More Projects'}

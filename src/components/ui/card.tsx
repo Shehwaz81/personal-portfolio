@@ -26,7 +26,7 @@ const Card = ({
   const techElements = techStack.map((tech, index) => (
     <span
       key={index}
-      className="text-xs text-cyan-200 bg-cyan-400/15 border border-cyan-400/40 px-3 py-1.5 rounded-full hover:bg-cyan-400/30 hover:border-cyan-400/70 hover:scale-110 hover:shadow-[0_0_12px_rgba(6,182,212,0.4)] transition-all duration-300 cursor-default"
+      className="text-xs text-slate-300 bg-white/5 border border-white/20 px-3 py-1.5 rounded-full hover:bg-white/10 hover:border-white/30 hover:scale-105 transition-all duration-300 cursor-default"
     >
       {tech}
     </span>
@@ -37,10 +37,10 @@ const Card = ({
   return (
     <div
       style={style}
-      className={`group w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl bg-gradient-to-br from-slate-900/70 to-slate-800/50 transform hover:-translate-y-2 rounded-2xl backdrop-blur-md overflow-hidden ring-1 ring-slate-600/40 hover:ring-cyan-400/60 hover:shadow-[0_8px_32px_rgba(6,182,212,0.25)] transition-all duration-500 mx-auto flex flex-col relative`}
+      className={`group w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl bg-slate-900/70 transform hover:-translate-y-2 rounded-2xl backdrop-blur-md overflow-hidden ring-1 ring-white/10 hover:ring-white/20 hover:shadow-[0_8px_32px_rgba(255,255,255,0.1)] transition-all duration-500 mx-auto flex flex-col relative`}
     >
-      {/* Animated gradient overlay on hover */}
-      <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/0 via-blue-500/0 to-purple-500/0 group-hover:from-cyan-500/5 group-hover:via-blue-500/5 group-hover:to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-10"></div>
+      {/* Subtle overlay on hover */}
+      <div className="absolute inset-0 bg-white/0 group-hover:bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-10"></div>
       
       <div className={`relative overflow-hidden bg-slate-800/30 h-64 ${className}`}>
         {/* Shimmer effect on hover */}
@@ -50,12 +50,12 @@ const Card = ({
           alt={`${title} preview`}
           className={`w-full h-full object-cover transition-all duration-500 transform group-hover:scale-110`}
         />
-        {/* Overlay gradient on hover */}
+
         <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
       </div>
 
       <div className="p-7 flex flex-col flex-grow relative z-20">
-        <h3 className="text-2xl font-bold bg-gradient-to-r from-white via-cyan-200 to-blue-300 bg-clip-text text-transparent mb-4 text-center sm:text-left group-hover:from-cyan-300 group-hover:via-blue-300 group-hover:to-purple-300 transition-all duration-500">
+        <h3 className="text-2xl font-bold text-white mb-4 text-center sm:text-left transition-all duration-500">
           {title}
         </h3>
 
@@ -76,10 +76,10 @@ const Card = ({
             href={github}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-1 flex items-center justify-center gap-2 py-3 px-4 bg-slate-800/60 hover:bg-slate-700/80 rounded-xl border border-slate-600/50 hover:border-slate-400/70 hover:shadow-[0_4px_16px_rgba(100,116,139,0.3)] transition-all duration-300 group/btn transform hover:scale-105"
+            className="flex-1 flex items-center justify-center gap-2 py-3 px-4 bg-white/5 hover:bg-white/10 rounded-xl border border-white/20 hover:border-white/40 transition-all duration-300 group/btn transform hover:scale-105"
           >
             <svg
-              className="w-5 h-5 text-slate-300 group-hover/btn:text-cyan-300 group-hover/btn:rotate-12 transition-all duration-300"
+              className="w-5 h-5 text-slate-300 group-hover/btn:text-white group-hover/btn:rotate-12 transition-all duration-300"
               fill="currentColor"
               viewBox="0 0 24 24"
             >
@@ -95,10 +95,10 @@ const Card = ({
               href={demo}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 flex items-center justify-center gap-2 py-3 px-4 bg-gradient-to-r from-cyan-500/25 to-blue-500/25 hover:from-cyan-500/40 hover:to-blue-500/40 rounded-xl border border-cyan-500/40 hover:border-cyan-400/80 hover:shadow-[0_4px_20px_rgba(6,182,212,0.5)] transition-all duration-300 group/demo transform hover:scale-105"
+              className="flex-1 flex items-center justify-center gap-2 py-3 px-4 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-400 hover:to-blue-400 rounded-xl border border-cyan-400/50 hover:border-cyan-300 text-white font-semibold shadow-[0_0_20px_rgba(6,182,212,0.3)] hover:shadow-[0_0_30px_rgba(6,182,212,0.5)] transition-all duration-300 group/demo transform hover:scale-105"
             >
               <svg
-                className="w-5 h-5 text-cyan-300 group-hover/demo:text-white group-hover/demo:translate-x-0.5 group-hover/demo:-translate-y-0.5 transition-all duration-300"
+                className="w-5 h-5 group-hover/demo:translate-x-0.5 group-hover/demo:-translate-y-0.5 transition-all duration-300"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -106,12 +106,12 @@ const Card = ({
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  strokeWidth={2}
+                  strokeWidth={2.5}
                   d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
                 />
               </svg>
-              <span className="text-sm font-medium text-cyan-300 group-hover/demo:text-white transition-colors">
-                Demo
+              <span className="text-sm font-semibold">
+                View Demo
               </span>
             </a>
           )}
