@@ -1,5 +1,5 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@radix-ui/react-avatar";
-import pfp from '../../assets/pfp6.jpg'
+import pfp from '../../assets/pfp8.jpg'
 import { cn } from "@/lib/utils";
 
 interface AvatarProps {
@@ -31,7 +31,7 @@ export const ProfileAvatar = ({
         "group-hover:scale-102",
         className
       )}>
-            <AvatarImage className="scale-300 object-50" src={pfp} alt="Your Name" />
+            <AvatarImage className="" src={pfp} alt="SS" />
             <AvatarFallback className="w-124 h-124 bg-slate-100 text-slate-700 font-semibold">
             {alt}
             </AvatarFallback>

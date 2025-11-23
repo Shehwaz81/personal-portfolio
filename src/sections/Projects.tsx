@@ -8,7 +8,7 @@ const Projects = () => {
         {
             title: 'SEO Content Generator',
             description: "AI-powered tool that instantly generates SEO-friendly product descriptions, FAQs, and marketing content for TrueWebPro clients",
-            img: "/assets/TrueWebPro.png",
+            img: "/assets/truewebpro_logo.jpg",
             techStack: ["React", "Node.js", "OpenAI API", "Express", "Tailwind CSS"],
             github: "",
             demo: "https://truewebproai.onrender.com/",
@@ -26,8 +26,8 @@ const Projects = () => {
         {
             title: 'CS50 Finance',
             description: "Stock trading web app with real-time AJAX updates for buying, selling, and portfolio management",
-            img: "/assets/cs50finance.png",
-            techStack: ["HTML", "CSS", "JavaScript", "Flask", "Jinja", "Python"],
+            img: "/assets/cs50finance.jpg",
+            techStack: ["HTML/CSS", "JavaScript", "Flask", "SQLite", "Python"],
             github: "https://github.com/username/cs50-finance",
             demo: "https://cs50.harvard.edu/x/psets/9/finance/",
             hasDemo: true

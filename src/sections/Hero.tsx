@@ -5,7 +5,7 @@ export const Hero = () => {
 
   const [text] = useTypewriter({
     words: [
-      "Building the future",
+      "Building the future...",
       "Solving real problems",
       "Creating impact",
       "Turning ideas into reality"
@@ -50,21 +50,21 @@ export const Hero = () => {
             <Cursor cursorStyle="|" />
           </p>
           <p className="text-base sm:text-lg text-slate-400 font-light max-w-2xl mx-auto leading-relaxed">
-            16-year-old developer. WRO International Champion. 
+            16-year-old developer. CS50 Graduate. 
             <br className="hidden sm:block" />
-            Building products that matter.
+            Competitive Programmer.
           </p>
         </div>
 
         {/* Minimal Achievements */}
         <div className="flex flex-wrap justify-center gap-6 text-center pt-4">
           <div className="group">
-            <div className="text-3xl sm:text-4xl font-bold text-white group-hover:text-cyan-400 transition-colors">15+</div>
+            <div className="text-3xl sm:text-4xl font-bold text-white group-hover:text-cyan-400 transition-colors">10+</div>
             <div className="text-xs sm:text-sm text-slate-400 mt-1">Projects</div>
           </div>
           <div className="w-px h-12 bg-white/10"></div>
           <div className="group">
-            <div className="text-3xl sm:text-4xl font-bold text-white group-hover:text-cyan-400 transition-colors">1st</div>
+            <div className="text-3xl sm:text-4xl font-bold text-white group-hover:text-cyan-400 transition-colors">2nd</div>
             <div className="text-xs sm:text-sm text-slate-400 mt-1">WRO Int'l</div>
           </div>
           <div className="w-px h-12 bg-white/10"></div>
@@ -88,7 +88,7 @@ export const Hero = () => {
             </span>
           </button>
           <button 
-            onClick={() => window.open("https://www.linkedin.com/in/shehwaz-saini-566494318/")} 
+            onClick={() => window.open("https://www.linkedin.com/in/shehwazsaini/")} 
             className="px-8 py-3.5 border border-white/20 text-white font-medium rounded-full hover:bg-white/5 hover:border-white/40 transition-all duration-300"
           >
             Let's Connect

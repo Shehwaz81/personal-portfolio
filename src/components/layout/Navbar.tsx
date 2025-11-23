@@ -13,8 +13,6 @@ export const Navbar = ({
   Projects = "Projects",
   Exp = "Experiences",
 }: NavbarProps) => {
-  const [isExpanded, setIsExpanded] = useState(false);
-  const [navHover, setNavHover] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const scrollToSection = (sectionId: string, offset = 0) => {
@@ -61,11 +59,7 @@ export const Navbar = ({
   return (
     <>
       <div className="hidden md:flex fixed top-6 left-1/2 transform -translate-x-1/2 z-50 items-center space-x-4">
-        <nav
-          className="group"
-          onMouseEnter={() => setNavHover(true)}
-          onMouseLeave={() => setNavHover(false)}
-        >
+        <nav className="group">
           <div className="bg-black/15 backdrop-blur-md rounded-3xl px-6 py-3 flex items-center text-white transition-all duration-500 hover:bg-black/90 hover:shadow-[0_0_20px_rgba(34,211,238,0.3)] hover:scale-105 border border-white/5">
             <img
               src={CubeIcon}
@@ -98,45 +92,29 @@ export const Navbar = ({
             </div>
           </div>
         </nav>
+      </div>
 
-
-        <div
-          className={`bg-black/90 rounded-full transition-all duration-500 ease-out overflow-hidden cursor-pointer border border-gray-700/50 hover:border-cyan-400/30 hover:shadow-[0_0_15px_rgba(34,211,238,0.2)] ${
-            isExpanded ? "w-72 h-12" : "w-24 h-10"
-          } ${navHover ? "transform translate-x-3" : ""}`}
-          onMouseEnter={() => setIsExpanded(true)}
-          onMouseLeave={() => setIsExpanded(false)}
-        >
-          {!isExpanded ? (
-            <div className="flex items-center justify-center h-full">
-              <div className="flex items-center space-x-2 px-3">
-                <Download className="w-4 h-4 text-cyan-400 animate-pulse" />
-                <span className="text-sm text-cyan-400 font-medium">More</span>
-              </div>
-            </div>
-          ) : (
-            <div className="flex items-center justify-between h-full px-4 animate-in slide-in-from-left-3 duration-300">
-              <button
-                onClick={handleDownloadResume}
-                className="flex items-center space-x-2 bg-cyan-500/20 hover:bg-cyan-500/30 rounded-full px-3 py-2 transition-all duration-200 hover:scale-105 border border-cyan-400/20 hover:border-cyan-400/40"
-              >
-                <Download className="w-3 h-3 text-cyan-400" />
-                <span className="text-xs text-cyan-400 font-medium">Resume</span>
-              </button>
-              <div className="flex items-center space-x-2">
-                {contactLinks.map((link, index) => (
-                  <button
-                    key={index}
-                    onClick={link.onClick}
-                    title={link.label}
-                    className="social-btn"
-                  >
-                    <link.icon className="w-3 h-3 text-gray-300" />
-                  </button>
-                ))}
-              </div>
-            </div>
-          )}
+      {/* Vertical Social Island - Fixed Center Right */}
+      <div className="hidden md:flex fixed right-6 top-1/2 -translate-y-1/2 z-50">
+        <div className="bg-black/80 backdrop-blur-md rounded-full px-2.5 py-4 flex flex-col items-center space-y-3 border border-white/10 hover:border-white/20 transition-all duration-300 hover:shadow-[0_0_20px_rgba(255,255,255,0.1)]">
+          <button
+            onClick={handleDownloadResume}
+            title="Download Resume"
+            className="group flex items-center justify-center w-8 h-8 rounded-full hover:bg-white/10 transition-all duration-200"
+          >
+            <Download className="w-4 h-4 text-slate-400 group-hover:text-white transition-colors" />
+          </button>
+          <div className="h-px w-4 bg-white/10"></div>
+          {contactLinks.map((link, index) => (
+            <button
+              key={index}
+              onClick={link.onClick}
+              title={link.label}
+              className="group flex items-center justify-center w-8 h-8 rounded-full hover:bg-white/10 transition-all duration-200"
+            >
+              <link.icon className="w-4 h-4 text-slate-400 group-hover:text-white transition-colors" />
+            </button>
+          ))}
         </div>
       </div>
 
