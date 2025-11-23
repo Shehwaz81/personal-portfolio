@@ -7,7 +7,7 @@ export const Hero = () => {
     words: [
       "Building the future",
       "Solving real problems",
-      "Creating impact at scale",
+      "Creating impact",
       "Turning ideas into reality"
     ],
     loop: true,
@@ -28,12 +28,10 @@ export const Hero = () => {
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden w-full">
       <div className="flex flex-col items-center z-10 px-6 max-w-5xl mx-auto text-center space-y-12">
         
-        {/* Minimalist Profile */}
         <div className="flex-shrink-0">
           <ProfileAvatar />
         </div>
         
-        {/* Main Headline - Steve Jobs Style */}
         <div className="space-y-6">
           <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold tracking-tight text-white">
             Shehwaz Saini
@@ -46,7 +44,6 @@ export const Hero = () => {
           </div>
         </div>
 
-        {/* Mission Statement - Minimal & Powerful */}
         <div className="space-y-3 max-w-3xl">
           <p className="text-2xl sm:text-3xl lg:text-4xl font-light text-white/90 leading-relaxed">
             {text}
@@ -73,7 +70,7 @@ export const Hero = () => {
           <div className="w-px h-12 bg-white/10"></div>
           <div className="group">
             <div className="text-3xl sm:text-4xl font-bold text-white group-hover:text-cyan-400 transition-colors">∞</div>
-            <div className="text-xs sm:text-sm text-slate-400 mt-1">Ambition</div>
+            <div className="text-xs sm:text-sm text-slate-400 mt-1">Drive</div>
           </div>
         </div>
 

@@ -110,8 +110,7 @@ export const About = () => {
                         <div className="relative pl-5">
                             <div className="absolute left-0 top-0 w-1 h-full bg-gradient-to-b from-cyan-400 to-blue-500 rounded-full"></div>
                             <p className="text-slate-200 text-sm sm:text-base leading-relaxed break-words">
-                                Now, I'm advancing in competitive programming and building projects, proving again that effort beats raw talent every time.
-                            </p>
+                                Recently, I've been working on competitive programming and ai. Leveling for the startup world.                           </p>
                         </div>
                     </div>
                 </div>

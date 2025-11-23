@@ -67,7 +67,7 @@ const Projects = () => {
         <div 
             key={index}
             className={`w-full transition-all duration-500 ease-in-out ${
-                index >= 2 && !seeMore 
+                index >= 3 && !seeMore 
                     ? 'hidden' 
                     : 'opacity-100 scale-100 translate-y-0'
             }`}
@@ -89,8 +89,8 @@ const Projects = () => {
                 Projects
             </h1>
             
-            <div className="max-w-6xl mx-auto">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-10 justify-items-center">
+            <div className="max-w-7xl mx-auto px-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
                     {projectList}
                 </div>
 

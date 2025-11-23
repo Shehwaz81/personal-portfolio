@@ -6,39 +6,31 @@ const Exp = () => {
     {
       title: "CS50X",
       content: (
-        <div>
-            <p className="text-xs font-normal md:text-sm text-white max-w-180 mx-auto max-w-180 mx-auto">
-                <span className='text-cyan-300'>CS50X was what jump started my dev journey</span>. From C fundamentals to full-stack development, I built diverse projects that taught me how to think like a developer, and more importantly, <span className='text-cyan-300'>how to problem solve effectively</span>.
+        <div className="space-y-4">
+            <p className="text-sm md:text-base text-slate-300 leading-relaxed">
+                <span className="text-cyan-400 font-medium">CS50X jump started my dev journey</span>. From C fundamentals to full-stack development, I built diverse projects that taught me how to think like a developer and <span className="text-cyan-400 font-medium">problem solve effectively</span>.
             </p>
-            <div className="grid grid-cols-2 gap-4 overflow-hidden p-5 scale-90">
-            <img
-                src="/assets/cs50x.webp"
-                alt="startup template"
-                width={500}
-                height={500}
-                className="h-20 w-full hover:scale-105 duration-300 rounded-xl object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-            />
-            <img
-                src="/assets/cs502.png"
-                alt="startup template"
-                width={500}
-                height={500}
-                className="h-20 w-full hover:scale-105 duration-300 rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-            />
-            <img 
-                src="/assets/cs503.png"
-                alt="startup template"
-                width={500}
-                height={500}
-                className="h-20 w-full hover:scale-105 duration-300 rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-            />
-            <img
-                src="https://assets.aceternity.com/templates/startup-4.webp"
-                alt="startup template"
-                width={500}
-                height={500}
-                className="h-20 hover:scale-105 duration-300 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-            />
+            <div className="grid grid-cols-2 gap-3 mt-4">
+                <img
+                    src="/assets/cs50x.webp"
+                    alt="CS50X Certificate"
+                    className="w-full h-32 md:h-48 rounded-lg object-cover hover:scale-[1.02] transition-transform duration-300 ring-1 ring-white/10"
+                />
+                <img
+                    src="/assets/cs502.png"
+                    alt="CS50 Project"
+                    className="w-full h-32 md:h-48 rounded-lg object-cover hover:scale-[1.02] transition-transform duration-300 ring-1 ring-white/10"
+                />
+                <img 
+                    src="/assets/cs503.png"
+                    alt="CS50 Project"
+                    className="w-full h-32 md:h-48 rounded-lg object-cover hover:scale-[1.02] transition-transform duration-300 ring-1 ring-white/10"
+                />
+                <img
+                    src="https://assets.aceternity.com/templates/startup-4.webp"
+                    alt="CS50 Project"
+                    className="w-full h-32 md:h-48 rounded-lg object-cover hover:scale-[1.02] transition-transform duration-300 ring-1 ring-white/10"
+                />
             </div>
         </div>
       ),
@@ -46,38 +38,30 @@ const Exp = () => {
     {
         title: "Youreka HSI",
         content: (
-        <div>
-            <p className="text-xs font-normal md:text-sm text-white max-w-180 mx-auto">
-                Led team research project on infectious disease and <span className='text-cyan-300'> analyzed measles outbreak data using R programming to create statistical models and regression visualizations</span>. Presented research findings at University of Windsor.
+        <div className="space-y-4">
+            <p className="text-sm md:text-base text-slate-300 leading-relaxed">
+                Led team research project on infectious disease. <span className="text-cyan-400 font-medium">Analyzed measles outbreak data using R programming</span> to create statistical models and regression visualizations. Presented findings at <span className="text-cyan-400 font-medium">University of Windsor</span>.
             </p>
-            <div className="grid grid-cols-2 gap-4 overflow-hidden p-5 scale-90">
+            <div className="grid grid-cols-2 gap-3 mt-4">
                 <img
-                src="/assets/plot1.webp"
-                alt="Statistical analysis visualization"
-                width={500}
-                height={500}
-                className="h-20 w-full hover:scale-105 duration-300 rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+                    src="/assets/plot1.webp"
+                    alt="Statistical analysis"
+                    className="w-full h-32 md:h-48 rounded-lg object-cover hover:scale-[1.02] transition-transform duration-300 ring-1 ring-white/10"
                 />
                 <img
-                src="/assets/presentationpic.jpg"
-                alt="Research presentation at University of Windsor"
-                width={500}
-                height={500}
-                className="h-20 w-full hover:scale-105 duration-300 rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+                    src="/assets/presentationpic.jpg"
+                    alt="Presentation at Windsor"
+                    className="w-full h-32 md:h-48 rounded-lg object-cover hover:scale-[1.02] transition-transform duration-300 ring-1 ring-white/10"
                 />
                 <img
-                src="/assets/windsorU.webp"
-                alt="University of Windsor campus"
-                width={500}
-                height={500}
-                className="h-20 w-full hover:scale-105 duration-300 rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+                    src="/assets/windsorU.webp"
+                    alt="University of Windsor"
+                    className="w-full h-32 md:h-48 rounded-lg object-cover hover:scale-[1.02] transition-transform duration-300 ring-1 ring-white/10"
                 />
                 <img
-                src="/assets/plot3.webp"
-                alt="Data regression model visualization"
-                width={500}
-                height={500}
-                className="h-20 w-full hover:scale-105 duration-300 rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+                    src="/assets/plot3.webp"
+                    alt="Regression model"
+                    className="w-full h-32 md:h-48 rounded-lg object-cover hover:scale-[1.02] transition-transform duration-300 ring-1 ring-white/10"
                 />
             </div>
         </div>
@@ -86,63 +70,52 @@ const Exp = () => {
     {
         title: "WRO Panama",
         content: (
-        <div>
-            <p className="text-xs font-normal md:text-sm text-white max-w-180 mx-auto">
-                After placing <span className='text-cyan-300'>2nd at WRO Nationals in Montreal</span>, our team advanced to represent Canada at the <span className='text-cyan-300 font-semibold'>WRO International Invitational Championship in Panama</span>. Competing against teams from around the world, we <span className='text-cyan-300 font-semibold'>won the championship</span>, showcasing teamwork, problem-solving, adaptability, and innovation on an international stage.
+        <div className="space-y-4">
+            <p className="text-sm md:text-base text-slate-300 leading-relaxed">
+                After placing <span className="text-cyan-400 font-medium">2nd at WRO Nationals in Montreal</span>, our team advanced to represent Canada at the <span className="text-cyan-400 font-medium">WRO International Invitational Championship in Panama</span>. Competing against teams from around the world, we <span className="text-cyan-400 font-semibold">won the championship</span>.
             </p>
-            <div className="grid grid-cols-2 gap-4 overflow-hidden p-5 scale-90">
+            <div className="grid grid-cols-2 gap-3 mt-4">
                 <img
-                src="/assets/WRO3.webp"
-                alt="WRO robotics competition"
-                width={500}
-                height={500}
-                className="h-20 w-full hover:scale-105 transform duration-300 rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+                    src="/assets/WRO3.webp"
+                    alt="WRO Competition"
+                    className="w-full h-32 md:h-48 rounded-lg object-cover hover:scale-[1.02] transition-transform duration-300 ring-1 ring-white/10"
                 />
                 <img
-                src="/assets/WRO.jpg"
-                alt="WRO team collaboration"
-                width={500}
-                height={500}
-                className="h-20 w-full hover:scale-105 duration-300 rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+                    src="/assets/WRO.jpg"
+                    alt="WRO Team"
+                    className="w-full h-32 md:h-48 rounded-lg object-cover hover:scale-[1.02] transition-transform duration-300 ring-1 ring-white/10"
                 />
                 <img
-                src="/assets/WRO1.jpg"
-                alt="WRO robotics project"
-                width={500}
-                height={500}
-                className="h-20 w-full hover:scale-105 duration-300 rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+                    src="/assets/WRO1.jpg"
+                    alt="WRO Robot"
+                    className="w-full h-32 md:h-48 rounded-lg object-cover hover:scale-[1.02] transition-transform duration-300 ring-1 ring-white/10"
                 />
                 <img
-                src="/assets/WRO2.jpg"
-                alt="WRO competition setup"
-                width={500}
-                height={500}
-                className="h-20 w-full hover:scale-105 duration-300 rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+                    src="/assets/WRO2.jpg"
+                    alt="WRO Setup"
+                    className="w-full h-32 md:h-48 rounded-lg object-cover hover:scale-[1.02] transition-transform duration-300 ring-1 ring-white/10"
                 />
             </div>
-    </div>
+        </div>
         )
     },
     {
-        title: "Startup Intern ",
+        title: "Startup Intern",
         content: (
-        <div>
-            <p className="text-xs font-normal md:text-sm text-white max-w-180 mx-auto">
-                Implemented AI system that generates SEO-optimized product descriptions and FAQs from database content, <span className='text-cyan-300'>reducing projected costs by 50% and saving hours of manual content creation.</span></p>
-            <div className="grid grid-cols-2 gap-4 overflow-hidden p-5 scale-90">
+        <div className="space-y-4">
+            <p className="text-sm md:text-base text-slate-300 leading-relaxed">
+                Implemented <span className="text-cyan-400 font-medium">AI system that generates SEO-optimized product descriptions and FAQs</span> from database content, <span className="text-cyan-400 font-medium">reducing projected costs by 50%</span> and saving hours of manual content creation.
+            </p>
+            <div className="grid grid-cols-2 gap-3 mt-4">
                 <img
-                src="/assets/TrueWebPro.png"
-                alt="WRO robotics competition"
-                width={500}
-                height={500}
-                className="h-20 w-full hover:scale-105 transform duration-300 rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+                    src="/assets/TrueWebPro.png"
+                    alt="TrueWebPro"
+                    className="w-full h-32 md:h-48 rounded-lg object-cover hover:scale-[1.02] transition-transform duration-300 ring-1 ring-white/10"
                 />
                 <img
-                src="/assets/gpt.jpg"
-                alt="WRO team collaboration"
-                width={500}
-                height={500}
-                className="h-20 w-full hover:scale-105 duration-300 rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+                    src="/assets/gpt.jpg"
+                    alt="AI Integration"
+                    className="w-full h-32 md:h-48 rounded-lg object-cover hover:scale-[1.02] transition-transform duration-300 ring-1 ring-white/10"
                 />
             </div>
         </div>
